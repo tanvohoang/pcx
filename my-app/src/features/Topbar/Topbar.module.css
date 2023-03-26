@@ -1,0 +1,100 @@
+.topbar {  
+    display: block;
+    position:relative;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    padding: 2px 7px 8px 7px;
+    
+}
+
+.topbar_bar .div {
+    padding: 2px 7px 8px 7px;
+}
+
+.topbar_element {
+    padding: 2px 7px 8px 7px;
+    display: inline-block;
+}
+
+.topbar_geo{
+    color: white;
+}
+
+
+
+.topbar_logo h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:red;
+}
+
+.topbar_logo a {
+    text-decoration: none;
+}
+
+.topbar_searcher input {
+    font-size: 1.4em;
+    height: 40px;
+    width: 1500px;
+}
+
+
+
+
+/*---------Language Bar-----------*/
+
+.topbar_language{
+    position: relative;
+}
+
+.topbar_language p {
+    color: white;
+}
+
+.topbar_language_option {
+    display: none;
+    width: 100%;
+    color: black;
+    background-color: rgb(255, 187, 0);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.topbar_language_option a{
+    text-decoration: none;
+}
+
+.topbar_language:hover .topbar_language_option{
+    display: block;
+    
+}
+
+
+
+/*--------- Sign in Popup Form -----------*/
+
+.topbar_login button {
+    text-align: center;
+    width: 6em;
+    font-style: bold;
+    background-color: rgb(247, 173, 13);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.topbar_login button:hover {
+    border: 1px solid rgb(255, 255, 255);
+    color:rgb(248, 255, 255);
+}
+
+.topbar_credentials {
+    display: none;
+    background-color: black;
+
+}
+
+
+

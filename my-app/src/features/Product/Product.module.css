@@ -1,0 +1,96 @@
+.item_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item_layout {
+    border-radius: 10px 10px 10px 10px;
+    margin: 50px;
+    padding:10px;
+    border: solid 1px black;
+}
+
+.item_layout:hover {
+    box-shadow: 1px 1px 1px 1px;
+    transform: translate(0px, -8px)
+}
+
+.item_layout a{
+    text-decoration: none;
+}
+
+
+
+.item_card{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 600px;
+}
+
+.item_card_image{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+
+
+.item_card_header{
+    overflow: hidden;
+    width: 400px;
+    height: 72px;
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.item_card_button{
+    box-shadow: 1px 1px 1px 1px;
+    margin-top: 20px;
+    float: right;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    height:50px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: rgb(247, 173, 13);
+}
+
+.item_card_button:active{
+    transform: translate(0px, -8px);
+    filter: brightness(70%);
+
+}
+
+.item_card_price{
+    font-weight: bold;
+    color: rgb(241, 85, 85);
+    margin: 5px;
+    font-size: 1.4em;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   float: right;
+}
+
+.item_card_condition_inStock{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 80px;
+    background-color: rgb(175, 177, 179);
+}
+
+.item_card_condition_outOfStock{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100px;
+    background-color: rgb(255, 208, 0);
+}
+
+.item_card_quantity {
+    margin-top: 30px;
+    font-size: 1.3em;
+    width: 100px;
+    height: 30px;
+}

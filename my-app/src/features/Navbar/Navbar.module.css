@@ -1,0 +1,72 @@
+
+
+/****************** DropDown *********************/
+.navbar_dropdown {
+    position: relative;
+    display: inline-block;
+ }
+ 
+.navbar_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+ }
+ 
+.navbar_dropdown:hover .navbar_dropdown_content {
+     display: block;
+ }
+
+ .navbar_dropdown:hover .navbar_dropdown_content a:hover {
+     color: rgb(247, 173, 13);    
+ }
+
+ 
+ 
+
+ 
+
+
+/********************** NAVIGATION BAR LAYOUT *******************************/
+
+.navbar_navlinks {
+    list-style: none;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.navbar_bar {
+    background-color:#131A22;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.navbar_navlinks a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+
+/********************** NAVIGATION BAR CART *******************************/
+
+.navbar_cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar_cart li {
+    margin: 2px;
+}
+
+.navbar_navlinks:last-child  div{
+    background-color:  rgb(247, 173, 13) ;
+}

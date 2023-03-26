@@ -1,0 +1,13 @@
+.slideshow{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.slide_image{
+    object-fit: cover;
+    width: 170vh;
+    height: 25vh;
+}
+

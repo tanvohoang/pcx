@@ -1,0 +1,66 @@
+
+.bottombar {
+    height: 600px;
+    width: 100%;
+    background-color: #131A22;
+}
+
+.bottombar_column {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    
+}
+
+/*affiliate headlines*/
+
+.bottombar_headline {
+    width: 100px;
+    height: 100px;
+    padding:30px;
+}
+
+.bottombar_headline  p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.bottombar_headline a{
+    text-decoration: none;
+    
+}
+
+.bottombar p:nth-child(2) {
+    color: rgb(133, 123, 123);
+}
+
+.bottombar_headline p:hover {
+    text-decoration: underline;
+    color:rgb(0, 212, 250);
+}
+
+/*navigation bar*/
+
+.bottombar_nav p{
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;   
+}
+
+.bottombar_nav a{
+    text-decoration: none; 
+}
+
+.bottombar_nav p:hover {
+    text-decoration: underline;
+    color:rgb(0, 212, 250);
+}
+
+
+/*brand name*/
+
+.bottombar_brand{
+    font-size: 1.2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(247, 173, 13)};

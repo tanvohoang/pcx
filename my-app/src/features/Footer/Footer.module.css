@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #131A22;
+    border: 0.1px solid;
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.footer_column {
+    padding: 40px;
+}
+
+.footer_column_options li {
+    list-style: none;
+}
+
+.footer_column_options a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_column_options a:hover {
+    color: rgb(0, 212, 250);
+}
+
+.footer_column_options h2 {
+    font-size: 1.3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(247, 173, 13);
+    font-weight: bold;
+
+}
