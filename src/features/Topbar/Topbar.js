@@ -1,7 +1,67 @@
+import { useSelector } from 'react-redux'
 import TopbarCSS from './Topbar.module.css'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link, Outlet } from 'react-router-dom';
+
 
 export default function Topbar() {
 
+    const count = useSelector((state) =>state.counter.value);
+    return (
+    <>
+    <div className={TopbarCSS.topbar}>
+
+      <div className={TopbarCSS.topbar_element}>
+        <div className={TopbarCSS.topbar_logo}>
+          <Link to="/">
+            <h3>PCX</h3>
+          </Link>            
+        </div>
+      </div>
+
+      <div className={TopbarCSS.topbar_element}>
+        <div className={TopbarCSS.topbar_searcher}>
+          <input type='text' placeholder='Search for products' ></input> 
+        </div>
+      </div>
+
+      <div className={TopbarCSS.topbar_element}>
+        <div className={TopbarCSS.topbar_language}>
+          <p>Language</p>
+          <div className={TopbarCSS.topbar_language_option}>     
+            <div><a href='#'>EN - English</a></div>
+            <div><a href='#'>DE - Deutsch</a></div>
+            <div><a href='#'>ES - Espanol</a></div>         
+          </div>
+         </div>     
+      </div>
+    
+      <div className={TopbarCSS.topbar_element}>
+        <div className={TopbarCSS.topbar_login}>
+           <button type='button'>SIGN IN</button>
+        </div>      
+      </div>   
+
+      <div className={TopbarCSS.topbar_element} style={{marginLeft: "5%"}}>
+          <Link to='/basket'>
+          <ShoppingCartIcon style = {{color:'orange', fontSize: "2em"}}/>
+          </Link>
+          <span className={TopbarCSS.topbar_productCounter}>{count}</span>
+      </div>
+
+  </div>
+  <Outlet/>
+  </> 
+    )
+}
+
+
+  /*
+  <div className={TopbarCSS.topbar_element}>
+        <div className={TopbarCSS.topbar_geo}>
+          Deliver to {geolocation}
+        </div>
+      </div>
   const successCallback = (position) => {
     console.log(position);
   };
@@ -10,46 +70,8 @@ export default function Topbar() {
     console.log(error);
   };
   var geolocation = navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-  
-    return (
-    <div className={TopbarCSS.topbar}>
 
-      <div className={TopbarCSS.topbar_element}>
-        <div className={TopbarCSS.topbar_logo}>
-          <a href="#">
-            <h3>PCX</h3>
-          </a>            
-        </div>
-      </div>
-      
-      <div className={TopbarCSS.topbar_element}>
-        <div className={TopbarCSS.topbar_geo}>
-          Deliver to {geolocation}
-        </div>
-      </div>
-
-      <div className={TopbarCSS.topbar_element}>
-
-        <div className={TopbarCSS.topbar_searcher}>
-          <input type='text' placeholder='Search for products' ></input> 
-        </div>
-      </div>
-
-      <div className={TopbarCSS.topbar_element}>
-        <div className={TopbarCSS.topbar_language}>
-           <p>Language</p>
-           <div className={TopbarCSS.topbar_language_option}>     
-              <div><a href='#'>EN - English</a></div>
-              <div><a href='#'>DE - Deutsch</a></div>
-              <div><a href='#'>ES - Espanol</a></div>         
-            </div>
-        </div>     
-      </div>
-    
-    <div className={TopbarCSS.topbar_element}>
-         <div className={TopbarCSS.topbar_login}>
-           <button type='button'>Sign in</button>
-             <form className={TopbarCSS.topbar_credentials} method='post' action='action.php'>
+  <form className={TopbarCSS.topbar_credentials} method='post' action='action.php'>
               <div>
                 <p>Enter Email or Phone Number</p>
                 <input type='text'></input>
@@ -60,18 +82,7 @@ export default function Topbar() {
               </div>
               <div>
                 <input type='checkbox' id='checkbox'></input>
-                <label for="checkbox"> Remember Me</label>
                 <button type='text'>Cancel</button>
               </div>
-
-             </form>
-            
-
-         </div>
-
-            
-    </div> 
-         
-  </div>
-    )
-}
+             </form>           
+  */

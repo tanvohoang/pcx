@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { slideshow } from './productSlide';
+import { slideshow } from '../../data/productSlide.js';
 import IntroSlideCSS from './IntroSlide.module.css'
 
 
@@ -17,16 +17,27 @@ const prevSlide = () => {
 
 return(
 
-  <div>
+   <div className={IntroSlideCSS.IntroSlide}>
 
-    <div className={IntroSlideCSS.slideshow}>
-    <button onClick={prevSlide}> Prev </button>
-    <button onClick={nextSlide}> Next </button>
-    <img className={IntroSlide.slide_image} src={slideshow[currentIndex].url} alt='Products' ></img>
+    <div>
+       <div className={IntroSlideCSS.slideshow}>
+         <img className={IntroSlideCSS.slideImage} src={slideshow[currentIndex].url} alt='Products' ></img>
+       </div>
+       <a className = {IntroSlideCSS.leftButton} onClick={prevSlide}> {`<`} </a>
+       <a className = {IntroSlideCSS.rightButton} onClick={nextSlide}> {`>`} </a>
+    </div>
+  
+    <div className={IntroSlideCSS.promoBar}>
+      <a href='#' className={IntroSlideCSS.newspaper}><div>SIGN UP FOR WEEKLY SPECIAL OFFERS & EXCLUSIVE PRODUCTS</div></a>
+      <a href='#' className={IntroSlideCSS.newspaper}><div>FREE SHIPPING ON SINGLE PRODUCT</div></a>
+      <a href='#' className={IntroSlideCSS.newspaper}><div>SELL TO US 25% BONUS</div></a>
+      <a href='#' className={IntroSlideCSS.newspaper}><div>PCX EVO PLATFORM</div></a> 
     </div>
 
+  </div> 
+  
 
-  </div>
+
 )
 
 }

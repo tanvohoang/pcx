@@ -1,49 +1,28 @@
+import Home from "./pages/Home/Home";
+import Basket from "./pages/Basket/Basket";
+import { useState, createContext } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from './features/Navbar/Navbar';
-import Topbar from './features/Topbar/Topbar';
-import Footer from './features/Footer/Footer';
-import IntroSlide from './features/IntroSlide/IntroSlide';
-import Bottombar from './features/Bottombar/Bottombar';
-import Product from './features/Product/Product';
-import { slideshow } from "./features/IntroSlide/productSlide";
+export const Context = createContext()
 
 
-
-
-
-
-
-
-
-
-/* 
-import { createBrowserRouter, BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
-import Home from './pages/Home/Home';
-<Home/>
-
-<BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-
-y
-      </Routes>
-    </BrowserRouter>
-    
-*/      
 
 export default function App() {
-  return (
-    <>
-      <Topbar/>
-      <Navbar/>
-      <IntroSlide slides = {slideshow}/>
-      <Product/>
 
-      <br></br>
-      <Footer/>
-      <Bottombar/>
-    </>
+  const [cart, setCart] = useState([])
+  const [hidden, setHidden] = useState(true)
+
+
+
+  return (
+    <Context.Provider value={{cart, setCart, hidden, setHidden,}}>
+      <BrowserRouter>
+      <Routes>
+      <Route path="basket" element={<Basket />} />
+      <Route index element={<Home />} />
+      </Routes>
+      </BrowserRouter>
+    </Context.Provider>
   );
 }
 

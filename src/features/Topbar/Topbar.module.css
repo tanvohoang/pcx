@@ -13,7 +13,8 @@
 }
 
 .topbar_element {
-    padding: 2px 7px 8px 7px;
+    padding-left:20px;
+    vertical-align: middle;
     display: inline-block;
 }
 
@@ -34,6 +35,8 @@
 }
 
 .topbar_searcher input {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 1.4em;
     height: 40px;
     width: 1500px;
@@ -45,16 +48,19 @@
 /*---------Language Bar-----------*/
 
 .topbar_language{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
 }
 
 .topbar_language p {
+
     color: white;
 }
 
 .topbar_language_option {
+    padding: 10px;
     display: none;
-    width: 100%;
+    width: 135%;
     color: black;
     background-color: rgb(255, 187, 0);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -72,11 +78,18 @@
     
 }
 
+.topbar_language:hover .topbar_language_option a:hover{
+    color: white;    
+}
+
 
 
 /*--------- Sign in Popup Form -----------*/
 
 .topbar_login button {
+    margin-left: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
     text-align: center;
     width: 6em;
     font-style: bold;
@@ -93,6 +106,17 @@
 .topbar_credentials {
     display: none;
     background-color: black;
+
+}
+
+.topbar_productCounter {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 1px 1px 1px 1px;
 
 }
 

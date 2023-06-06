@@ -6,7 +6,6 @@ export default function Footer (){
             <div className={FooterCSS.footer_column}>
                 <ul className={FooterCSS.footer_column_options}>
                     <li><h2>Get to Know Us</h2></li>
-
                     <li><a href='#'>Careers</a></li>
                     <li><a href='#'>Blog</a></li>
                     <li><a href='#'>Investor Relation</a></li>

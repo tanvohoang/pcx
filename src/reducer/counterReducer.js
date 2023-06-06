@@ -16,10 +16,14 @@ const counterReducer = createSlice({
 
         incrementByAmount: (state,action) => {
             state.value += action.payload
+        },
+        decrementByAmount: (state,action) => {
+            state.value -= action.payload
         }
     },
 
 })
 
-export const {increment, decrement, incrementByAmount} = counterReducer.actions
+export const selectCount = (state) => state.counter.value
+export const {increment, decrement, incrementByAmount, decrementByAmount} = counterReducer.actions
 export default counterReducer.reducer

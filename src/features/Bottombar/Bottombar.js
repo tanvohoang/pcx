@@ -117,7 +117,7 @@ export default function Bottombar() {
 
 
             <div className = {BottombarCSS.bottombar_column}>
-                <p1 className = {BottombarCSS.bottombar_brand}>© 1996-2023, PCX.com, Inc. or its affiliates</p1>
+                <p className = {BottombarCSS.bottombar_brand}>© 1996-2023, PCX.com, Inc. or its affiliates</p>
             </div>
 
 

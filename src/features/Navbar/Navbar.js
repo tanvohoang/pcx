@@ -1,15 +1,14 @@
 import NavbarCSS from './Navbar.module.css'
-import { useSelector } from 'react-redux'
-
+import { Link, Outlet } from 'react-router-dom';
 
 export default function Navbar() {
-  const count = useSelector((state) =>state.counter.value);
 
 
-  return (    
+  return (
+      <>
       <div className = {NavbarCSS.navbar_container}>
         <ul className = {NavbarCSS.navbar_bar}>
-          <li className ={NavbarCSS.navbar_navlinks}><a href="#">Home</a></li>
+          <li className ={NavbarCSS.navbar_navlinks}><Link to="/">Home</Link></li>
           <li className ={NavbarCSS.navbar_navlinks}><a href="#">Customer Service</a></li>
           <li className ={NavbarCSS.navbar_navlinks}><a href="#">About Us</a></li>
           <li className ={NavbarCSS.navbar_navlinks}><a href="#">Gift</a></li> 
@@ -27,16 +26,12 @@ export default function Navbar() {
 
           <li className ={NavbarCSS.navbar_navlinks}>
             <a href="#">
-              
             </a>
           </li>
-
-
-
         </ul>
-
-
       </div>
+      <Outlet/>
+      </>
   )
 }
 

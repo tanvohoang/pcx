@@ -24,6 +24,7 @@
 
 .item_card{
     background-color: rgb(255, 255, 255);
+    padding: 10px;
     width: 400px;
     height: 600px;
 }
@@ -37,11 +38,12 @@
 
 
 .item_card_header{
+    color: rgb(0, 0, 0);
     overflow: hidden;
     width: 400px;
     height: 72px;
-    font-size: 1.3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -72,20 +74,20 @@
    float: right;
 }
 
-.item_card_condition_inStock{
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 80px;
-    background-color: rgb(175, 177, 179);
-}
-
-.item_card_condition_outOfStock{
+.item_card_condition {
+    padding: 2px;
     margin-top: 20px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100px;
-    background-color: rgb(255, 208, 0);
+}
+
+.item_card_condition[condition = "Out of Stock"]{
+    color: rgb(231, 231, 231);
+    background-color: grey;
+}
+.item_card_condition[condition = "In Stock"]{
+    background-color: orange;
 }
 
 .item_card_quantity {
