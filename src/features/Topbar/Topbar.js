@@ -12,11 +12,9 @@ export default function Topbar() {
     <div className={TopbarCSS.topbar}>
 
       <div className={TopbarCSS.topbar_element}>
-        <div className={TopbarCSS.topbar_logo}>
-          <Link to="/">
-            <h3>PCX</h3>
+          <Link to="/" style={{textDecoration:'none'}}>
+            <h4>PCX</h4>
           </Link>            
-        </div>
       </div>
 
       <div className={TopbarCSS.topbar_element}>
@@ -27,7 +25,7 @@ export default function Topbar() {
 
       <div className={TopbarCSS.topbar_element}>
         <div className={TopbarCSS.topbar_language}>
-          <p>Language</p>
+          <p>LANGUAGE</p>
           <div className={TopbarCSS.topbar_language_option}>     
             <div><a href='#'>EN - English</a></div>
             <div><a href='#'>DE - Deutsch</a></div>
@@ -42,7 +40,7 @@ export default function Topbar() {
         </div>      
       </div>   
 
-      <div className={TopbarCSS.topbar_element} style={{marginLeft: "5%"}}>
+      <div className={TopbarCSS.topbar_element} style={{marginLeft: "1%",paddingTop: "2px"}}>
           <Link to='/basket'>
           <ShoppingCartIcon style = {{color:'orange', fontSize: "2em"}}/>
           </Link>

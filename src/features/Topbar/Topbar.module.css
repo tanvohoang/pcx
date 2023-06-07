@@ -1,45 +1,35 @@
 .topbar {  
-    display: block;
-    position:relative;
+    display: flex;
     height: 60px;
-    width: 100%;
     background-color: black;
     padding: 2px 7px 8px 7px;
     
 }
 
-.topbar_bar .div {
-    padding: 2px 7px 8px 7px;
-}
-
 .topbar_element {
     padding-left:20px;
-    vertical-align: middle;
-    display: inline-block;
+    margin-top: 10px;
 }
 
-.topbar_geo{
-    color: white;
+.topbar_element:first-child {
+    margin-top: -32px;
 }
 
 
 
-.topbar_logo h3 {
+.topbar_element h4 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
     font-weight: bold;
     color:red;
 }
 
-.topbar_logo a {
-    text-decoration: none;
-}
+
 
 .topbar_searcher input {
-    display: inline-block;
-    vertical-align: middle;
     font-size: 1.4em;
     height: 40px;
-    width: 1500px;
+    width: 1200px;
 }
 
 
@@ -48,6 +38,7 @@
 /*---------Language Bar-----------*/
 
 .topbar_language{
+    margin-bottom: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
 }
@@ -84,9 +75,10 @@
 
 
 
-/*--------- Sign in Popup Form -----------*/
+/*--------- Sign in -----------*/
 
 .topbar_login button {
+    margin-top: 4px;
     margin-left: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.8em;
