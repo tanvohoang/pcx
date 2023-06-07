@@ -23,8 +23,10 @@ return(
        <div className={IntroSlideCSS.slideshow}>
          <img className={IntroSlideCSS.slideImage} src={slideshow[currentIndex].url} alt='Products' ></img>
        </div>
+       <div className={IntroSlideCSS.redirect}>
        <a className = {IntroSlideCSS.leftButton} onClick={prevSlide}> {`<`} </a>
        <a className = {IntroSlideCSS.rightButton} onClick={nextSlide}> {`>`} </a>
+       </div>
     </div>
   
     <div className={IntroSlideCSS.promoBar}>
